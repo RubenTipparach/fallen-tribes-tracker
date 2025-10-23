@@ -32,15 +32,17 @@
 - [x] Implement darker blue outline on selection (persists)
 - [x] Ensure outlines work with OBJ models loaded via bevy_obj
 
-### Phase 4: Multi-Ship Selection & Estimated Move System
-- [ ] Add second ship to test multi-ship selection
-- [ ] Create EstimatedMove struct (position + rotation)
-- [ ] Track estimated_move per ship in ShipController
-- [ ] Click ship → select it (darker outline)
-- [ ] Click elsewhere → deselect ship
-- [ ] Multiple ships: only one selected at a time
-- [ ] Each ship tracks own hologram/estimated move independently
-- [ ] Visual feedback for selected vs unselected state
+### Phase 4: Multi-Ship Selection & Estimated Move System ✅
+- [x] Add second ship to test multi-ship selection
+- [x] Create EstimatedMove struct (position + rotation)
+- [x] Track estimated_move per ship in ShipController
+- [x] Click ship → select it (darker outline)
+- [x] Click elsewhere → deselect ship (via observers)
+- [x] Multiple ships: only one selected at a time
+- [x] Each ship tracks own hologram/estimated move independently
+- [x] Visual feedback for selected vs unselected state
+- [x] BONUS: Direct click-and-drag on ships (no Move button needed!)
+- [x] BONUS: Mesh-accurate picking and hover detection with observers
 
 ### Phase 5: Refactor Drag to Use Move Button
 - [x] Remove drag-from-ship behavior
@@ -177,4 +179,3 @@
 - [ ] Document physics simulation parameters
 - [ ] Add code comments for complex systems
 - [ ] Create user guide for controls
-
